@@ -29,9 +29,18 @@ const handleDelete=async (id)=>{
         <Carosel/>
         <div className="my-5"><AddNewRecipie allRecipiesOnHomePage={allRecipiesOnHomePage}/></div>
 
-        <form className='d-flex input-group mx-auto w-75'>
-            <input type='search' className='form-control ' onChange={e=>setSearchKey(e.target.value)} placeholder='Search Here' aria-label='Search' />
-          </form>
+<div style={{ position: "sticky", top: "60px" ,zIndex:"1"}} className='bg-white py-4'>
+    <form className="d-flex input-group mx-auto w-75">
+  <input 
+    type="search" 
+    className="form-control" 
+    onChange={e => setSearchKey(e.target.value)} 
+    placeholder="Search Here" 
+    aria-label="Search" 
+  />
+</form>
+</div>
+        
 
 
          <section className="p-5">
